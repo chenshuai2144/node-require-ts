@@ -1,6 +1,6 @@
 {
-  "name": "require-ts",
-  "version": "0.0.1",
+  "name": "node-import-ts",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
