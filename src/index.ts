@@ -6,13 +6,17 @@ import importFresh from "import-fresh";
 export = (filePath: string) => {
   const outDir = join(__dirname, "../.cache");
   const fileName = path.basename(filePath).replace(".ts", ".js");
-  compile([filePath], {
+  const index = compile([filePath], {
     noEmitOnError: true,
-    noImplicitAny: true,
+    noImplicitAny: false,
+    allowJs: true,
     target: ts.ScriptTarget.ES5,
     module: ts.ModuleKind.CommonJS,
     outDir
   } as ts.CompilerOptions);
+  if (index !== 0) {
+    throw new Error("编译失败");
+  }
   const msg = importFresh(join(outDir, fileName)) as {
     default: any;
   };

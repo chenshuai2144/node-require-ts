@@ -4,7 +4,7 @@ function compile(
   fileNames: string[],
   options: ts.CompilerOptions = {
     noEmitOnError: true,
-    noImplicitAny: true,
+    noImplicitAny: false,
     allowJs: true,
     target: ts.ScriptTarget.ES5,
     module: ts.ModuleKind.CommonJS

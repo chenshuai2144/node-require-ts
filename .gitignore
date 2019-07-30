@@ -39,4 +39,5 @@ screenshot
 
 build
 .cache
-./lib
+lib
+.jsCache
