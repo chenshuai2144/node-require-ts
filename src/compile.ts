@@ -5,6 +5,7 @@ function compile(
   options: ts.CompilerOptions = {
     noEmitOnError: true,
     noImplicitAny: true,
+    allowJs: true,
     target: ts.ScriptTarget.ES5,
     module: ts.ModuleKind.CommonJS
   }
