@@ -1,6 +1,6 @@
 {
   "name": "node-import-ts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -8,6 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "rm -rf lib && npm run build"
   },
+  "files": [
+    "lib/index.js",
+    "lib/compile.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenshuai2144/node-require-ts.git"
