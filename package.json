@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/chenshuai2144/node-require-ts#readme",
   "dependencies": {
-    "@types/node": "^12.6.2",
-    "import-fresh": "^3.1.0",
-    "typescript": "^3.5.3"
+    "@types/node": "^12.20.55",
+    "import-fresh": "^3.3.0",
+    "typescript": "^5.3.3"
   }
 }
